@@ -22,10 +22,11 @@ The scripts expect a few specific column names in a CSV file. The default used i
 ### Print scripts
 There are two scripts that print out CSV file information in a human readable format.
 
-'./presentation_print_brief_plaintext.py file.csv'
+`./presentation_print_brief_plaintext.py file.csv`
 
 Prints:
 
+```
 ________________________________________________________________________________
 NAME:
 <Names of presenters, uses "Additional Names" if not null>
@@ -42,12 +43,13 @@ ABSTRACT:
 BIO:
 <Bio of presenter(s)>
 ________________________________________________________________________________
+```
 
-
-'./presentation_print_verbose_plaintext.py file.csv'
+`./presentation_print_verbose_plaintext.py file.csv`
 
 Prints:
 
+```
 ________________________________________________________________________________
 NAME:
 <Names of presenters, uses "Additional Names" if not null>
@@ -70,17 +72,21 @@ DETAILED OUTLINE:
 BIO:
 <Bio of presenter(s)>
 ________________________________________________________________________________
+```
 
 
 ### Email scripts
 There are three scripts that are used to email CFP applicants various pieces of information. 
 These include the initial accept/reject email, notice of the presentation being scheduled, and an offer of a DEF CON human badge.
 
-'./presentation_send_response_email.py file.csv'
+`./presentation_send_response_email.py file.csv`
+
 Sends accept/reject email to each presenter, uses "texts/presentation_accepted.inc" and "texts/presentation_rejected.inc" files as the main body
 
-'./presentation_send_scheduled_email.py file.csv'
+`./presentation_send_scheduled_email.py file.csv`
+
 Sends notice to each accpeted presentation that their presentation has been scheduled, uses "texts/presentation_scheduled.inc" as the main body.
 
-'./presentation_send_badge_offer_email.py file.csv'
+`./presentation_send_badge_offer_email.py file.csv`
+
 Send offer of human badge to presenter, uses "texts/presentation_human_badge.inc" as the main body. This script is special because it also creates a system to uniquely identify the presenter to help ensure a safe badge exchange with an unknown individual. Running this script makes a unique ID, using the first name of the presenter, with a 6 digit number appended to it. This ID is sent in the email, and also appended to a file called "presenter_badge_uniqIDs" with their full name and the ID. The presenter brings this information to the meeting and the identity of the presenter can be reasonably validated.
