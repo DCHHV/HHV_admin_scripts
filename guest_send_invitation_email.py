@@ -11,11 +11,8 @@ from email.mime.text import MIMEText
 
 smtp_pass = getpass("Enter password for \'%s\': " % config.SMTP_user);
 
-with open('texts/presentation_accepted.inc', 'r') as pres_accept:
-  accepted_tmpl=Template(pres_accept.read());
-
-with open('texts/presentation_rejected.inc', 'r') as pres_reject:
-  rejected_tmpl=Template(pres_reject.read());
+with open('texts/guest_invitation.inc', 'r') as guest_invite:
+  invite_tmpl=Template(guest_invite.read());
 
 # This could probably be done more intelligently with better error checking
 # Should probably set this up to ensure all entries are correct and sane
@@ -23,17 +20,14 @@ with open('texts/presentation_rejected.inc', 'r') as pres_reject:
 with open(sys.argv[1], 'r') as csvfile:
   csvlines=csv.DictReader(csvfile, delimiter=',');
   for row in csvlines:
-    if row['Accepted'] == "y":
-      response = accepted_tmpl.substitute(Name=row['Name'].split(' ')[0],
-        Title=row['Title'], Abstract=row['Abstract'], Bio=row['Bio'],
-        DC_num=config.DC_num, DC_days=config.DC_days,
-        DC_floormapurl=config.DC_floormapurl,
-        Response_deadline=config.Response_deadline);
-    elif row['Accepted'] == "n":
-      response = rejected_tmpl.substitute(Name=row['Name'].split(' ')[0],
-      Title=row['Title'], DC_num=config.DC_num)
+    if row['Blacklist'] == "n":
+      response = invite_tmpl.substitute(Name=row['Name'].split(' ')[0],
+        CFP_link=config.CFP_link);
+    elif row['Blacklist'] == "y":
+      print "Skipping \'%s\' as they have been asked to not be contacted!" % row['Name'];
+      raise SystemExit
     else:
-      print "Presentation title \'%s\' has invalid \'Accepted\' column!" % row['Title'];
+      print "\'%s\' has invalid \'Blacklisted\' column!" % row['Name'];
       print "Not sending any email for this row or any further rows!"
       raise SystemExit
 
@@ -44,7 +38,7 @@ with open(sys.argv[1], 'r') as csvfile:
     question = raw_input("Do you want to send the previous email to \'%s\'? (y/n): " % row['Email']);
     if question == "y":
       msg = MIMEText(response);
-      msg['Subject'] = config.Email_subject, "Response";
+      msg['Subject'] = config.Email_subject, "Invitation";
       msg['From'] = config.Email_from;
       msg['To'] = row['Email'];
 

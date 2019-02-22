@@ -40,7 +40,7 @@ with open(sys.argv[1], 'r') as csvfile:
     question = raw_input("Do you want to send the previous email to \'%s\'? (y/n): " % row['Email']);
     if question == "y":
       msg = MIMEText(response);
-      msg['Subject'] = config.Email_subject;
+      msg['Subject'] = config.Email_subject, "Response";
       msg['From'] = config.Email_from;
       msg['To'] = row['Email'];
 

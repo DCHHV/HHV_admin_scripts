@@ -44,7 +44,7 @@ with open(sys.argv[1], 'r') as csvfile:
     if question == "y":
       IDfile.write("%s, %s\n" % (row['Name'], uniqID));
       msg = MIMEText(response);
-      msg['Subject'] = config.Email_subject;
+      msg['Subject'] = config.Email_subject, "Response";
       msg['From'] = config.Email_from;
       msg['To'] = row['Email'];
 
