@@ -8,3 +8,8 @@ However, we regret to inform you that it was not selected as a presentation for 
 You are encouraged to refine your CFP submission and submit it to other conferences or again next year. If you would like some feedback on your submission, please let me know and I can pass along comments of our selection team.
 
 Happy Hacking!
+
+--
+
+l33tbunni
+DEF CON Hardware Hacking Village

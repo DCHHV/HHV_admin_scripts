@@ -9,3 +9,8 @@ Your unique ID: "$Badge_uniqID"
 You can't miss me, I will have on a decently sized green knit hat in the shape of a dragon. If you have any issues at con, don't forget you can reach me at $Organizer_phone.
 
 Happy Hacking!
+
+--
+
+l33tbunni
+DEF CON Hardware Hacking Village

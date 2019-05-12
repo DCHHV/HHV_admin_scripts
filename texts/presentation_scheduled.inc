@@ -27,3 +27,8 @@ What you need to know moving forward:
 If you have any comments or questions, please let me know and we will get back to you as soon as we can!
 
 Happy Hacking!
+
+--
+
+l33tbunni
+DEF CON Hardware Hacking Village

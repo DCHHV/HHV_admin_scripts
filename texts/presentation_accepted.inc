@@ -35,3 +35,8 @@ What you will want to know eventually:
 If you have any questions, comments, or concerns, please let me know as soon as possible!
 
 Happy Hacking!
+
+--
+
+l33tbunni
+DEF CON Hardware Hacking Village
