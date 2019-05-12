@@ -24,7 +24,7 @@ with open(sys.argv[1], 'r') as csvfile:
       response = invite_tmpl.substitute(Name=row['Name'].split(' ')[0],
         CFP_link=config.CFP_link);
     elif row['Blacklist'] == "y":
-      print "Skipping \'%s\' as they have been asked to not be contacted!" % row['Name'];
+      print "Skipping \'%s\' as they have been removed from the active contact list!" % row['Name'];
       raise SystemExit
     else:
       print "\'%s\' has invalid \'Blacklisted\' column!" % row['Name'];
@@ -34,11 +34,13 @@ with open(sys.argv[1], 'r') as csvfile:
 
     print"_____________________________________________________________________________"
     print response
+    print"_____________________________________________________________________________"
 
     question = raw_input("Do you want to send the previous email to \'%s\'? (y/n): " % row['Email']);
     if question == "y":
       msg = MIMEText(response);
-      msg['Subject'] = config.Email_subject, "Invitation";
+      msg['Subject'] = config.Email_subject + " CFP Invitation";
+      print(msg['Subject']);
       msg['From'] = config.Email_from;
       msg['To'] = row['Email'];
 
