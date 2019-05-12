@@ -40,7 +40,6 @@ with open(sys.argv[1], 'r') as csvfile:
     if question == "y":
       msg = MIMEText(response);
       msg['Subject'] = config.Email_subject + " CFP Invitation";
-      print(msg['Subject']);
       msg['From'] = config.Email_from;
       msg['To'] = row['Email'];
 
