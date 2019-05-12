@@ -3,10 +3,10 @@ Organizer_phone="";  # Phone number of the above organizer
 SMTP_url="";  # SMTP server, used in all of the send scripts
 SMTP_port=587;  # Testing done with TLS, SSL connection may not work without modifications
 SMTP_user="";  # SMTP username on the server.
-# Password is prompted for suring script execution
+# Password is prompted for during script execution
 
 Email_from="";  # When sending emails, the "From" in the header gets set to this
-Email_subject="";  # When sending emails, the "Subject" is set to this
+Email_subject="";  # When sending emails, the "Subject" is set to this with further text appended from each script
 
 DC_num="";  # DEF CON number, used to make things cleaner and specific year to year
 DC_days="";  # DEF CON event days, used to note the days of the con
