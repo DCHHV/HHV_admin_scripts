@@ -17,7 +17,7 @@ The "config_tmpl.py" file needs to be copied to "config.py" and then all of the 
 
 ### CSV file
 The scripts expect a few specific column names in a CSV file. The default used is:
-"Name","Email","Twitter","Website","Additional Names","Title","Abstract","Outline","Bio","Outline","Accepted","Time"
+"Name","Email","Social Media","Website","Additional Names","Title","Abstract","Outline","Bio","Outline","Accepted","Time"
 
 ### Print scripts
 There are two scripts that print out CSV file information in a human readable format.
@@ -54,8 +54,8 @@ ________________________________________________________________________________
 NAME:
 <Names of presenters, uses "Additional Names" if not null>
 
-TWITTER:
-<Twitter handle of presenter(s)>
+SOCIAL MEDIA:
+<Accounts of presenter(s)>
 
 WEBSITE:
 <Website of presenter(s) or 

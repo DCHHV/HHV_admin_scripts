@@ -7,7 +7,7 @@ import csv;
 
 with open(sys.argv[1], 'r') as csvfile:
   csvlines=csv.DictReader(csvfile, delimiter=',');
-  print "________________________________________________________________________________"
+  print "______________________________________________________________________________"
   for row in csvlines:
     name = row['Name']; #, additional names
     addnames = row['Additional Names'];
@@ -28,5 +28,5 @@ with open(sys.argv[1], 'r') as csvfile:
     print abstract, "\n";
     print "BIO:"
     print bio, "\n";
-    print "________________________________________________________________________________"
+    print "______________________________________________________________________________"
    

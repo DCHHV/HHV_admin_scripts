@@ -6,7 +6,7 @@
 #
 # Output fields include:
 #   Name(s) of presenter(s)
-#   Twitter handle(s)
+#   Social media accounts
 #   Website for presenter(s) or presentation
 #   Title of presentation
 #   Abstract
@@ -18,11 +18,11 @@ import sys;
 
 with open(sys.argv[1], 'r') as csvfile:
   csvlines=csv.DictReader(csvfile, delimiter=',');
-  print "________________________________________________________________________________"
+  print "______________________________________________________________________________"
   for row in csvlines:
     name = row['Name'];
     addnames = row['Additional Names'];
-    twitter = row['Twitter'];
+    social_media = row['Social Media'];
     website = row['Website'];
     title = row['Title'];
     abstract = row['Abstract'];
@@ -33,8 +33,8 @@ with open(sys.argv[1], 'r') as csvfile:
       print("%s, %s\n" % (name, addnames));
     else:
       print name, "\n";
-    print "TWITTER:"
-    print twitter, "\n";
+    print "SOCIAL MEDIA:"
+    print social_media, "\n";
     print "WEBSITE:"
     print website, "\n";
     print "TITLE:"
@@ -45,5 +45,5 @@ with open(sys.argv[1], 'r') as csvfile:
     print outline, "\n";
     print "BIO:"
     print bio, "\n";
-    print "________________________________________________________________________________"
+    print "______________________________________________________________________________"
    
