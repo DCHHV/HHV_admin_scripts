@@ -5,6 +5,8 @@ Thank you for proposing to give the presentation:
 
 It has been accepted as a presentation for the DEF CON $DC_num Hardware Hacking Village
 
+$Additional_Comments
+
 What you need to do right now:
 
 1) Reply to this email to confirm that you will be able to give this presentation during DEF CON $DC_num, $DC_days. You will have until $Response_deadline to confirm this. If we do not hear from you by then, we will regrettably need to rescind this offer.
@@ -27,9 +29,7 @@ What you will want to know eventually:
 
 1) We try to provide human badges to HHV presenters. Note that we are at the mercy of DEF CON to be able to provide these. If we are able to provide a human badge we will let you know in a separate email. If you have any questions or concerns please let me know ASAP.
 
-2) Please familiarize yourself with the DEF CON conference layout and the location of the HHV; you can find the floormap here: $DC_floormapurl
-
-3) While we will release the schedule online, we will also send an email detailing your talk slot with further information.
+2) While we will release the schedule online, we will also send an email detailing your talk slot with further information.
 
 
 If you have any questions, comments, or concerns, please let me know as soon as possible!
