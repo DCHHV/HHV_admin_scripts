@@ -23,13 +23,13 @@ with open('texts/presentation_rejected.inc', 'r') as pres_reject:
 with open(sys.argv[1], 'r') as csvfile:
   csvlines=csv.DictReader(csvfile, delimiter=',');
   for row in csvlines:
-    if row['Accepted'] == "y":
+    if row['Accepted'].lower() == "y":
       response = accepted_tmpl.substitute(Name=row['Name'].split(' ')[0],
         Title=row['Title'], Abstract=row['Abstract'], Bio=row['Bio'],
         DC_num=config.DC_num, DC_days=config.DC_days,
         DC_floormapurl=config.DC_floormapurl,
         Response_deadline=config.Response_deadline);
-    elif row['Accepted'] == "n":
+    elif row['Accepted'].lower() == "n":
       response = rejected_tmpl.substitute(Name=row['Name'].split(' ')[0],
       Title=row['Title'], DC_num=config.DC_num)
     else:
@@ -43,7 +43,7 @@ with open(sys.argv[1], 'r') as csvfile:
     print"_____________________________________________________________________________"
 
     question = raw_input("Do you want to send the previous email to \'%s\'? (y/n): " % row['Email']);
-    if question == "y":
+    if question.lower() == "y":
       msg = MIMEText(response);
       msg['Subject'] = config.Email_subject + " CFP Response";
       msg['From'] = config.Email_from;

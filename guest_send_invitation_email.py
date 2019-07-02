@@ -20,10 +20,10 @@ with open('texts/guest_invitation.inc', 'r') as guest_invite:
 with open(sys.argv[1], 'r') as csvfile:
   csvlines=csv.DictReader(csvfile, delimiter=',');
   for row in csvlines:
-    if row['Blacklist'] == "n":
+    if row['Blacklist'].lower() == "n":
       response = invite_tmpl.substitute(Name=row['Name'].split(' ')[0],
         CFP_link=config.CFP_link);
-    elif row['Blacklist'] == "y":
+    elif row['Blacklist'].lower() == "y":
       print "Skipping \'%s\' as they have been removed from the active contact list!" % row['Name'];
       raise SystemExit
     else:
@@ -37,7 +37,7 @@ with open(sys.argv[1], 'r') as csvfile:
     print"_____________________________________________________________________________"
 
     question = raw_input("Do you want to send the previous email to \'%s\'? (y/n): " % row['Email']);
-    if question == "y":
+    if question.lower() == "y":
       msg = MIMEText(response);
       msg['Subject'] = config.Email_subject + " CFP Invitation";
       msg['From'] = config.Email_from;

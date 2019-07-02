@@ -25,11 +25,11 @@ with open(sys.argv[1], 'r') as csvfile:
   csvlines=csv.DictReader(csvfile, delimiter=',');
   for row in csvlines:
     uniqID="%s%06d" % (row['Name'].split(' ')[0], random.randrange(0, 999999));
-    if row['Accepted'] == "y":
+    if row['Accepted'].lower() == "y":
       response = badge_tmpl.substitute(Name=row['Name'].split(' ')[0],
         Organizer_phone=config.Organizer_phone, Badge_meet=config.Badge_meet,
         Badge_uniqID=uniqID);
-    elif row['Accepted'] == "n":
+    elif row['Accepted'].lower() == "n":
       continue;
     else:
       print "Presentation title \'%s\' has invalid \'Accepted\' column!" % row['Title'];
@@ -42,7 +42,7 @@ with open(sys.argv[1], 'r') as csvfile:
     print"_____________________________________________________________________________"
 
     question = raw_input("Do you want to send the previous email to \'%s\'? (y/n): " % row['Email']);
-    if question == "y":
+    if question.lower() == "y":
       IDfile.write("%s, %s\n" % (row['Name'], uniqID));
       msg = MIMEText(response);
       msg['Subject'] = config.Email_subject + " CFP Response";
