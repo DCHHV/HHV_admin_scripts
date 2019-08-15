@@ -76,8 +76,12 @@ ________________________________________________________________________________
 
 
 ### Email scripts
-There are three scripts that are used to email CFP applicants various pieces of information. 
-These include the initial accept/reject email, notice of the presentation being scheduled, and an offer of a DEF CON human badge.
+There are five scripts that are used to email CFP applicants various pieces of information.
+These include a submission request email to a list of VIPs, a CFP accept/reject email, notice of the presentation being scheduled, an offer of a DEF CON human badge, and a feedback request for after DEF CON.
+
+`./guest_send_email_invitation.py file.csv`
+
+This is the only oddball script that does not work on the same CSV format, it only requires the following columns: Name, Email, and Blacklist ('y' or 'n', emails only sent if blacklist is 'n'. This is used to specifically stop bothering people who have requested so). The text links to the CFP link.
 
 `./presentation_send_response_email.py file.csv`
 
@@ -90,3 +94,7 @@ Sends notice to each accpeted presentation that their presentation has been sche
 `./presentation_send_badge_offer_email.py file.csv`
 
 Send offer of human badge to presenter, uses "texts/presentation_human_badge.inc" as the main body. This script is special because it also creates a system to uniquely identify the presenter to help ensure a safe badge exchange with an unknown individual. Running this script makes a unique ID, using the first name of the presenter, with a 6 digit number appended to it. This ID is sent in the email, and also appended to a file called "presenter_badge_uniqIDs" with their full name and the ID. The presenter brings this information to the meeting and the identity of the presenter can be reasonably validated.
+
+`./presentation_send_feedback_request.py file.csv`
+
+Send a followup email asking about what feedback the presenter might have about their speaking experience.
