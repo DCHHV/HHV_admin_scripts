@@ -1,8 +1,8 @@
 $Name,
 
-It is that time of year again where we reach out to a handful of awesome individuals and invite them to give a presentation in the DEF CON Hardware Hacking Village.
+It is that time of year again where we reach out to a handful of awesome individuals and invite them to lead an activity in the DEF CON Hardware Hacking Village.
 
-We love the work you do and would be grateful to have you give a hands-on demonstration or short workshop for our attendees. Anything that takes the hardware shenanigans to the max.
+We love the work you do and would be grateful to have you give a hands-on demonstration or short workshop for our attendees. Anything that takes the hardware shenanigans to the max. This year even moreso than others we are looking for activities that are hand-on for those in attendance.
 
 If you are interested, our CFP is live now: $CFP_link
 
@@ -12,5 +12,4 @@ Happy Hacking!
 
 --
 
-l33tbunni
 DEF CON Hardware Hacking Village
