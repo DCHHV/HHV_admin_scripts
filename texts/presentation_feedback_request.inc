@@ -22,5 +22,4 @@ Happy Hacking!
 
 --
 
-l33tbunni
 DEF CON Hardware Hacking Village
