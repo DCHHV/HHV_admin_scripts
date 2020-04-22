@@ -2,7 +2,7 @@ $Name,
 
 It is that time of year again where we reach out to a handful of awesome individuals and invite them to take an active role in the DEF CON Hardware Hacking Village.
 
-We love the work you do and would be grateful to have you give a hands-on demonstration or short workshop for our attendees. Anything that takes the hardware shenanigans to the max. We love the work you do and would be grateful to have you bring something to share. Anything that takes the hardware shenanigans to the max. It could be a hands-on demonstration of a technique, or process, a short workshop, or just time to sit and chat with community members about a cool project you have or are working on. This year even moreso than others we are looking for activities that engage those in attendance; something you can't get from a good video.
+We love the work you do and would be grateful to have you bring something to share. Anything that takes the hardware shenanigans to the max. It could be a hands-on demonstration of a technique, or process, a short workshop, or just time to sit and chat with community members about a cool project you have or are working on. This year even moreso than others we are looking for activities that engage those in attendance; something you can't get from a good video.
 
 If you are interested, our CFP is live now: $CFP_link
 
