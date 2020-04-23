@@ -12,8 +12,6 @@ DC_num="";  # DEF CON number, used to make things cleaner and specific year to y
 DC_days="";  # DEF CON event days, used to note the days of the con
 DC_floormapurl="";  # URL pointing to the DEF CON floormap, speakers should know where they are going
 
-CFP_link=""; # URL pointing to the DCHHV CFP form
-
 Badge_meet="";  # Meeting time and location to give speakers their badges
 
 Response_deadline="";  # Deadline for CFP applicants to respond to confirm their presentation
