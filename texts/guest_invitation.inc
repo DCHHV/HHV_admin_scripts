@@ -6,7 +6,7 @@ We love the work you do and would be grateful to have you bring something to sha
 
 If you are interested, our CFP is live now: $CFP_link
 
-DEFCON is moving forward currently with a the intent to hold the event. They will make a go/no-go decision in June. We look forward to working with you whenever we can finally get things to work out.
+For DEF CON 29, things are still in a bit of a state of flux. However, we are moving forward on the assumption that the DEF CON hybrid event will take place. Similar to Safe Mode DEF CON 28, all talks and events are going to be pre-recorded to be able to stream online and play in-person. Keep an eye on the DEF CON website for updates!
 
 If you are not interested or able this year, I hope we can make something work in the future. If you would like to never hear from us again, just let me know and I'll make sure that we never send you a request in the future.
 
