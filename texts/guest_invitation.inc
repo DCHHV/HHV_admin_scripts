@@ -6,7 +6,9 @@ We love the work you do and would be grateful to have you bring something to sha
 
 If you are interested, our CFP is live now: $CFP_link
 
-For DEF CON 29, things are still in a bit of a state of flux. However, we are moving forward on the assumption that the DEF CON hybrid event will take place. Similar to Safe Mode DEF CON 28, all talks and events are going to be pre-recorded to be able to stream online and play in-person. Keep an eye on the DEF CON website for updates!
+Also, this year we will be running a "Make Your Own Use" contest! We are looking for judges, would you be a judge? The concept of the contest is submissions can be made based on any project that worked on over the year, there may be 3 categories for a) repairing a closed device, b) adding a feature to a device that was never intended, c) bypassing DRM on devices to unlock their full potential -- if there are many submissions. We expect the judges to award points based on 1) how bent/changed/diferent/unintended it is 2) re-work quality 3) re-work ingenuity 4) weirdness (it is DEF CON).
+
+If you are interested in being a judge, please let us know.
 
 If you are not interested or able this year, I hope we can make something work in the future. If you would like to never hear from us again, just let me know and I'll make sure that we never send you a request in the future.
 
