@@ -6,7 +6,7 @@ We love the work you do and would be grateful to have you bring something to sha
 
 If you are interested, our CFP is live now: $CFP_link
 
-Also, this year we will be running a "Make Your Own Use" contest! We are looking for judges, would you be interested in volunteering to be a judge? The concept of the contest is submissions can be made based on any project that worked on over the year, there may be 3 categories for a) repairing a closed device, b) adding a feature to a device that was never intended, c) bypassing DRM on devices to unlock their full potential -- if there are many submissions. We expect the judges to award points based on 1) how bent/changed/diferent/unintended it is 2) re-work quality 3) re-work ingenuity 4) weirdness (it is DEF CON).
+Also, this year a number of contests need judges -- like the Make Your Own Use and Rugoldberg machine contests. Rather than set up an arbitrary panel, we want to encourage any that want to participate to sign up to be a judge. We will have specific details of events coming out over the next few months. As we assign judges to specific events we will work with you on expectations and time requirements.
 
 If you are interested in being a judge, please let us know.
 
