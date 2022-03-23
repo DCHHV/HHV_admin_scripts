@@ -6,7 +6,9 @@ We love the work you do and would be grateful to have you bring something to sha
 
 If you are interested, our CFP is live now: $CFP_link
 
-For DEF CON 29, things are still in a bit of a state of flux. However, we are moving forward on the assumption that the DEF CON hybrid event will take place. Similar to Safe Mode DEF CON 28, all talks and events are going to be pre-recorded to be able to stream online and play in-person. Keep an eye on the DEF CON website for updates!
+Also, this year a number of contests need judges -- like the Make Your Own Use and Rube Goldberg machine contests. Rather than set up an arbitrary panel, we want to encourage any that want to participate to sign up to be a judge. We will have specific details of events coming out over the next few months. As we assign judges to specific events we will work with you on expectations and time requirements.
+
+If you are interested in being a judge, please let us know.
 
 If you are not interested or able this year, I hope we can make something work in the future. If you would like to never hear from us again, just let me know and I'll make sure that we never send you a request in the future.
 
