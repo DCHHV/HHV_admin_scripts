@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 import csv;
 import sys;
@@ -24,19 +24,19 @@ with open(sys.argv[1], 'r') as csvfile:
       response = invite_tmpl.substitute(Name=row['Name'].split(' ')[0],
         CFP_link='https://dchhv.org/CFP.html');
     elif row['Blacklist'].lower() == "y":
-      print "Skipping \'%s\' as they have been removed from the active contact list!" % row['Name'];
+      print("Skipping \'%s\' as they have been removed from the active contact list!" % row['Name'])
       raise SystemExit
     else:
-      print "\'%s\' has invalid \'Blacklisted\' column!" % row['Name'];
-      print "Not sending any email for this row or any further rows!"
+      print("\'%s\' has invalid \'Blacklisted\' column!" % row['Name'])
+      print("Not sending any email for this row or any further rows!")
       raise SystemExit
 
 
-    print"_____________________________________________________________________________"
-    print response
-    print"_____________________________________________________________________________"
+    print("_____________________________________________________________________________")
+    print(response)
+    print("_____________________________________________________________________________")
 
-    question = raw_input("Do you want to send the previous email to \'%s\'? (y/n): " % row['Email']);
+    question = input("Do you want to send the previous email to \'%s\'? (y/n): " % row['Email']);
     if question.lower() == "y":
       msg = MIMEText(response);
       msg['Subject'] = config.Email_subject + " CFP Invitation";
@@ -52,5 +52,5 @@ with open(sys.argv[1], 'r') as csvfile:
       send.sendmail(msg['From'], msg['To'], msg.as_string());
       send.quit();
     else:
-      print "Skipped sending this email!";
+      print("Skipped sending this email!")
       time.sleep(2);
