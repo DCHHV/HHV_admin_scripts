@@ -34,16 +34,16 @@ with open(sys.argv[1], 'r') as csvfile:
       response = rejected_tmpl.substitute(Name=row['Name'].split(' ')[0],
       Title=row['Title'], DC_num=config.DC_num)
     else:
-      print "Presentation title \'%s\' has invalid \'Accepted\' column!" % row['Title'];
-      print "Not sending any email for this row or any further rows!"
+      print("Presentation title \'%s\' has invalid \'Accepted\' column!" % row['Title'])
+      print("Not sending any email for this row or any further rows!")
       raise SystemExit
 
 
-    print"_____________________________________________________________________________"
-    print response
-    print"_____________________________________________________________________________"
+    print("_____________________________________________________________________________")
+    print(response)
+    print("_____________________________________________________________________________")
 
-    question = raw_input("Do you want to send the previous email to \'%s\'? (y/n): " % row['Email']);
+    question = input("Do you want to send the previous email to \'%s\'? (y/n): " % row['Email']);
     if question.lower() == "y":
       msg = MIMEText(response);
       msg['Subject'] = config.Email_subject + " CFP Response";
@@ -59,5 +59,5 @@ with open(sys.argv[1], 'r') as csvfile:
       send.sendmail(msg['From'], msg['To'], msg.as_string());
       send.quit();
     else:
-      print "Skipped sending this email!";
+      print("Skipped sending this email!")
       time.sleep(2);
