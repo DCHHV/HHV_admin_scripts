@@ -7,7 +7,7 @@ import csv;
 
 with open(sys.argv[1], 'r') as csvfile:
   csvlines=csv.DictReader(csvfile, delimiter=',');
-  print "______________________________________________________________________________"
+  print("______________________________________________________________________________")
   for row in csvlines:
     name = row['Name']; #, additional names
     addnames = row['Additional Names'];
@@ -15,18 +15,17 @@ with open(sys.argv[1], 'r') as csvfile:
     title = row['Title'];
     abstract = row['Abstract'];
     bio = row['Bio'];
-    print "NAME:";
+    print("NAME:")
     if addnames:
-      print("%s, %s\n" % (name, addnames));
+      print("%s, %s\n" % (name, addnames))
     else:
-      print name, "\n";
-    print "DATE & TIME:"
-    print datetime, "\n";
-    print "TITLE:"
-    print title, "\n";
-    print "ABSTRACT:"
-    print abstract, "\n";
-    print "BIO:"
-    print bio, "\n";
-    print "______________________________________________________________________________"
-   
+      print(name, "\n")
+    print("DATE & TIME:")
+    print(datetime, "\n")
+    print("TITLE:")
+    print(title, "\n")
+    print("ABSTRACT:")
+    print(abstract, "\n")
+    print("BIO:")
+    print(bio, "\n")
+    print("______________________________________________________________________________")

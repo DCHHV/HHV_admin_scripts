@@ -25,20 +25,21 @@ with open(sys.argv[1], 'r') as csvfile:
         Title=row['Title'], Time=row['Time'],
         Schedule_deadline=config.Schedule_deadline, Organizer=config.Organizer,
         Organizer_phone=config.Organizer_phone,
-        Radiosilent_deadline=config.Radiosilent_deadline);
+        Radiosilent_deadline=config.Radiosilent_deadline,
+        DC_floormapurl=config.DC_floormapurl);
     elif row['Accepted'].lower() == "n":
       continue;
     else:
-      print "Presentation title \'%s\' has invalid \'Accepted\' column!" % row['Title'];
-      print "Not sending any email for this row or any further rows!"
+      print("Presentation title \'%s\' has invalid \'Accepted\' column!" % row['Title'])
+      print("Not sending any email for this row or any further rows!")
       raise SystemExit
 
 
-    print"_____________________________________________________________________________"
-    print response
-    print"_____________________________________________________________________________"
+    print("_____________________________________________________________________________")
+    print(response)
+    print("_____________________________________________________________________________")
 
-    question = raw_input("Do you want to send the previous email to \'%s\'? (y/n): " % row['Email']);
+    question = input("Do you want to send the previous email to \'%s\'? (y/n): " % row['Email']);
     if question.lower() == "y":
       msg = MIMEText(response);
       msg['Subject'] = config.Email_subject + " CFP Response";
@@ -54,5 +55,5 @@ with open(sys.argv[1], 'r') as csvfile:
       send.sendmail(msg['From'], msg['To'], msg.as_string());
       send.quit();
     else:
-      print "Skipped sending this email!";
+      print("Skipped sending this email!")
       time.sleep(2);

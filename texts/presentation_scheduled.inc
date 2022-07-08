@@ -24,7 +24,7 @@ What you need to know moving forward:
 
 6) Please show up to the HHV operations table and check in with "$Organizer" no less than 10 minutes before your talk is scheduled to begin.  We won't turn you away for being late, but the waiting crowd might get angry.
 
-7) I will not be readily available via email during DEF CON.  If you have any questions or concerns on or after $Radiosilent_deadline, please contact me by phone or locate "$Organizer" in the HHV ops area.  My phone number is $Organizer_phone.
+7) I will not be readily available via email during DEF CON.  If you have any questions or concerns on or after $Radiosilent_deadline, please locate "$Organizer" in the HHV ops area.
 
 If you have any comments or questions, please let me know and we will get back to you as soon as we can!
 
