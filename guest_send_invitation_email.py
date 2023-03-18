@@ -25,7 +25,8 @@ with open(sys.argv[1], 'r') as csvfile:
         CFP_link='https://dchhv.org/CFP.html');
     elif row['Blacklist'].lower() == "y":
       print("Skipping \'%s\' as they have been removed from the active contact list!" % row['Name'])
-      raise SystemExit
+      time.sleep(5)
+      continue
     else:
       print("\'%s\' has invalid \'Blacklisted\' column!" % row['Name'])
       print("Not sending any email for this row or any further rows!")
