@@ -28,7 +28,8 @@ with open(sys.argv[1], 'r') as csvfile:
     if row['Accepted'].lower() == "y":
       response = badge_tmpl.substitute(Name=row['Name'].split(' ')[0],
         Organizer_phone=config.Organizer_phone, Badge_meet=config.Badge_meet,
-        Badge_uniqID=uniqID);
+        Badge_uniqID=uniqID,
+        Signature=config.Signature);
     elif row['Accepted'].lower() == "n":
       continue;
     else:

@@ -26,7 +26,8 @@ with open(sys.argv[1], 'r') as csvfile:
         Schedule_deadline=config.Schedule_deadline, Organizer=config.Organizer,
         Organizer_phone=config.Organizer_phone,
         Radiosilent_deadline=config.Radiosilent_deadline,
-        DC_floormapurl=config.DC_floormapurl);
+        DC_floormapurl=config.DC_floormapurl,
+        Signature=config.Signature);
     elif row['Accepted'].lower() == "n":
       continue;
     else:

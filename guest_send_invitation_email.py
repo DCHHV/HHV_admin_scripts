@@ -22,7 +22,8 @@ with open(sys.argv[1], 'r') as csvfile:
   for row in csvlines:
     if row['Blacklist'].lower() == "n":
       response = invite_tmpl.substitute(Name=row['Name'].split(' ')[0],
-        CFP_link='https://dchhv.org/CFP.html');
+        CFP_link='https://dchhv.org/CFP.html',
+        Signature=config.Signature);
     elif row['Blacklist'].lower() == "y":
       print("Skipping \'%s\' as they have been removed from the active contact list!" % row['Name'])
       time.sleep(5)

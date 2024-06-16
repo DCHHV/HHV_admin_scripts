@@ -44,5 +44,5 @@ Happy Hacking!
 
 --
 
-l33tbunni
+$Signature
 DEF CON Hardware Hacking Village

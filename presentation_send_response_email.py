@@ -29,10 +29,12 @@ with open(sys.argv[1], 'r') as csvfile:
         DC_num=config.DC_num, DC_days=config.DC_days,
         DC_floormapurl=config.DC_floormapurl,
         Additional_Comments=row['Additional_Comments'],
-        Response_deadline=config.Response_deadline);
+        Response_deadline=config.Response_deadline,
+        Signature=config.Signature);
     elif row['Accepted'].lower() == "n":
       response = rejected_tmpl.substitute(Name=row['Name'].split(' ')[0],
-      Title=row['Title'], DC_num=config.DC_num)
+      Title=row['Title'], DC_num=config.DC_num,
+      Signature=config.Signature)
     else:
       print("Presentation title \'%s\' has invalid \'Accepted\' column!" % row['Title'])
       print("Not sending any email for this row or any further rows!")
