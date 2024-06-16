@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 
 # Simple script to transform CSV from goog forms to a more organized plaintext for
 # evaluation and commenting. Contains more verbose information about each
@@ -18,7 +18,7 @@ import sys;
 
 with open(sys.argv[1], 'r') as csvfile:
   csvlines=csv.DictReader(csvfile, delimiter=',');
-  print "______________________________________________________________________________"
+  print("______________________________________________________________________________")
   for row in csvlines:
     name = row['Name'];
     addnames = row['Additional Names'];
@@ -28,22 +28,22 @@ with open(sys.argv[1], 'r') as csvfile:
     abstract = row['Abstract'];
     outline = row['Outline'];
     bio = row['Bio'];
-    print "NAME:";
+    print("NAME:");
     if addnames:
       print("%s, %s\n" % (name, addnames));
     else:
-      print name, "\n";
-    print "SOCIAL MEDIA:"
-    print social_media, "\n";
-    print "WEBSITE:"
-    print website, "\n";
-    print "TITLE:"
-    print title, "\n";
-    print "ABSTRACT:"
-    print abstract, "\n";
-    print "DETAILED OUTLINE:"
-    print outline, "\n";
-    print "BIO:"
-    print bio, "\n";
-    print "______________________________________________________________________________"
+      print("%s\n" % name);
+    print("SOCIAL MEDIA:")
+    print("%s\n" % social_media);
+    print("WEBSITE:")
+    print("%s\n" % website);
+    print("TITLE:")
+    print("%s\n" % title);
+    print("ABSTRACT:")
+    print("%s\n" % abstract);
+    print("DETAILED OUTLINE:")
+    print("%s\n" % outline);
+    print("BIO:")
+    print("%s\n" % bio);
+    print("______________________________________________________________________________")
    
