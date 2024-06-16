@@ -11,13 +11,19 @@ What you need to do right now:
 
 1) Reply to this email to confirm that you will be able to give this presentation during DEF CON $DC_num, $DC_days. You will have until $Response_deadline to confirm this. If we do not hear from you by then, we will regrettably need to rescind this offer.
 
-2) Send me any desired edits for your talk description and bio, which we'll be listing on the website exactly as they appear below:
+2) Send me any desired edits for your talk title, description, and bio, which we'll be listing on the website exactly as they appear below:
+
+"$Title"
 
 "$Abstract"
 
 "$Bio"
 
-3) Wait until we post the schedule before you announce that you're speaking, as not every proposal submitter has heard back yet. We intend on posting the schedule to the dchhv.org site in the near future. We will tweet about it from @DC_HHV when it's up and ready.
+
+You have until $Response_deadline to change this if needed!
+
+
+3) Wait until we post the schedule before you announce that you're speaking, as not every proposal submitter has heard back yet. We intend on posting the schedule to the dchhv.org site in the near future. We will tweet about it from @DC_HHV (Twitter/Xitter/Whatever) and @DC_HHV@defcon.social when it's up and ready.
 
 
 What you should do before archiving this email:
