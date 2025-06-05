@@ -8,6 +8,9 @@
 #   Name(s) of presenter(s)
 #   Social media accounts
 #   Website for presenter(s) or presentation
+#   Contact email
+#   Format of presentation
+#   Duration of presentation
 #   Title of presentation
 #   Abstract
 #   Outline
@@ -24,6 +27,9 @@ with open(sys.argv[1], 'r') as csvfile:
     addnames = row['Additional Names'];
     social_media = row['Social Media'];
     website = row['Website'];
+    email = row['Email'];
+    pres_format = row['Format'];
+    length = row['Length'];
     title = row['Title'];
     abstract = row['Abstract'];
     outline = row['Outline'];
@@ -37,6 +43,12 @@ with open(sys.argv[1], 'r') as csvfile:
     print("%s\n" % social_media);
     print("WEBSITE:")
     print("%s\n" % website);
+    print("EMAIL (Don't share outside of HHV/SSV/DEF CON!):")
+    print("%s\n" % email);
+    print("FORMAT:")
+    print("%s\n" % pres_format);
+    print("DURATION:")
+    print("%s\n" % length);
     print("TITLE:")
     print("%s\n" % title);
     print("ABSTRACT:")
