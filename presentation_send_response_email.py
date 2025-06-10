@@ -30,6 +30,7 @@ with open(sys.argv[1], 'r') as csvfile:
         DC_floormapurl=config.DC_floormapurl,
         Additional_Comments=row['Additional_Comments'],
         Response_deadline=config.Response_deadline,
+        Content_deadline=config.Content_deadline,
         Signature=config.Signature);
     elif row['Accepted'].lower() == "n":
       response = rejected_tmpl.substitute(Name=row['Name'].split(' ')[0],

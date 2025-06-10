@@ -16,6 +16,7 @@ Badge_meet="";  # Meeting time and location to give speakers their badges
 
 Response_deadline="";  # Deadline for CFP applicants to respond to confirm their presentation
 Schedule_deadline="";  # Deadline for CFP applicants to respond to lock in their presentation schedule
+Content_deadline=""; # Deadline for CFP applicatnts to send their slide deck or other information to DEF CON
 Radiosilent_deadline="";  # Point in time where the Organizer will not be available via email
 
 Signature=""; # Signature for signing sent emails

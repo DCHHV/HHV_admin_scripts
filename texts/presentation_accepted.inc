@@ -37,6 +37,8 @@ What you will want to know eventually:
 
 2) While we will release the schedule online, we will also send an email detailing your talk slot with further information.
 
+3) If you want your slide deck and/or other media related to your presentation available on the DEF CON media server, please provide everything before $Content_deadline.
+
 
 If you have any questions, comments, or concerns, please let me know as soon as possible!
 
