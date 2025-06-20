@@ -15,8 +15,6 @@ smtp_pass = getpass("Enter password for \'%s\': " % config.SMTP_user);
 with open('texts/presentation_human_badge.inc', 'r') as pres_badge:
   badge_tmpl=Template(pres_badge.read());
 
-IDfile=open('presenter_badge_uniqIDs', 'a+');
-
 
 # This could probably be done more intelligently with better error checking
 # Should probably set this up to ensure all entries are correct and sane
@@ -24,11 +22,12 @@ IDfile=open('presenter_badge_uniqIDs', 'a+');
 with open(sys.argv[1], 'r') as csvfile:
   csvlines=csv.DictReader(csvfile, delimiter=',');
   for row in csvlines:
-    uniqID="%s%06d" % (row['Name'].split(' ')[0], random.randrange(0, 999999));
     if row['Accepted'].lower() == "y":
       response = badge_tmpl.substitute(Name=row['Name'].split(' ')[0],
-        Organizer_phone=config.Organizer_phone, Badge_meet=config.Badge_meet,
-        Badge_uniqID=uniqID,
+        Organizer_phone=config.Organizer_phone,
+        Badge_meet=config.Badge_meet,
+        Speaker_ops=config.Speaker_ops,
+        Content_deadline=config.Content_deadline,
         Signature=config.Signature);
     elif row['Accepted'].lower() == "n":
       continue;
@@ -44,9 +43,8 @@ with open(sys.argv[1], 'r') as csvfile:
 
     question = input("Do you want to send the previous email to \'%s\'? (y/n): " % row['Email']);
     if question.lower() == "y":
-      IDfile.write("%s, %s\n" % (row['Name'], uniqID));
       msg = MIMEText(response);
-      msg['Subject'] = config.Email_subject + " CFP Response";
+      msg['Subject'] = config.Email_subject + " CFP -- Human Badge for Presenters";
       msg['From'] = config.Email_from;
       msg['To'] = row['Email'];
 
@@ -61,4 +59,3 @@ with open(sys.argv[1], 'r') as csvfile:
     else:
       print("Skipped sending this email!")
       time.sleep(2);
-IDfile.close;

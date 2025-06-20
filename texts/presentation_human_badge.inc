@@ -1,12 +1,25 @@
 $Name,
 
-Good news! We have been informed that we're getting human badges to give to our presenters (one per talk/workshop)!
+Good news! We have been informed that we're getting human badges to give to our presenters!
 
-Below is a short string, this is your unique identifier, do not share it with anyone else or you won't get your badge! Bring this to the meeting location (just jot it on a piece of paper, have it on your phone, etc.) noted below to receive your human badge and all of the other reg goodies that come along with it. If you are unable to meet me at the time noted below then please let me know ASAP.  If you do not want the human badge for any reason, let me know and we will ensure it gets to a good home.
+These will be managed by DEF CON Creator Stages and you will need to pick them up from the Creator Stage Ready Room (or In-Human Registration, see below). In order to do so you will need to provide, for each presenter, either:
 
-$Badge_meet
-Your unique ID: "$Badge_uniqID"
-You can't miss me, I will have on a decently sized green/black knit hat in the shape of a rabbit. If you have any issues at con, don't forget you can reach me at $Organizer_phone.
+- BOTH your legal name that appears on a government issued ID -AND- show this ID to DEF CON staff for badge pickup 
+
+-OR-
+
+- Provide me a passphrase that you can repeat at badge pickup in order to receive your badge
+
+
+You can pick up your Human badge on Thursday from $Badge_meet; or on Friday or Saturday from In-Human Registration. In either case, a government issued ID or passphrase will be required for this as noted above!
+
+Note that if you have multiple presenters, each presenter will need to pick up their own badge!
+
+If you are receiving a Human badge from another department (like Contests, Villages, etc.) you will not be given a second badge from the Creator Stages.
+
+Presenters are asked to arrive to Speaker Ops ($Speaker_ops) at least 45 minutes before their scheduled time.
+
+All talks will be recorded and uploaded to the DEF CON media server.
 
 Happy Hacking!
 

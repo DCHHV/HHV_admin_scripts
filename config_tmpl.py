@@ -19,4 +19,7 @@ Schedule_deadline="";  # Deadline for CFP applicants to respond to lock in their
 Content_deadline=""; # Deadline for CFP applicatnts to send their slide deck or other information to DEF CON
 Radiosilent_deadline="";  # Point in time where the Organizer will not be available via email
 
+Badge_meet=""; # Location for badge pickup
+Speaker_ops=""; # Location of speaker ready room
+
 Signature=""; # Signature for signing sent emails
